@@ -1,0 +1,15 @@
+@import "./Base/font";
+@import "./Utils/variables";
+@import "./Layout/main";
+
+// Eléments principaux de la page
+
+body{
+    font-family: $font-principale;
+    width: 100%;
+    margin: auto;
+}
+*{
+    box-sizing: border-box;
+}
+
