@@ -8,7 +8,7 @@
     justify-content: center;
 }
 .blocs{
-    background-color: rgb(243, 243, 243);
+
     height: 500px;
     width: 500px;
     display: flex;
@@ -16,6 +16,7 @@
     margin: auto;
     flex-wrap: wrap;
     &__touch{
+        text-decoration: none;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -30,17 +31,20 @@
             justify-content: center;
             width: 90%;
             height: 90%;
-            background-color: rgb(148, 148, 148) ;
+            background-color: rgb(148, 148, 148);
+            box-shadow: 2px 2px 7px #d3d3d3;
         }
         &__nbr{
             border-radius: 15px;
+            color: black;
             font-size: $size-font;
             display: flex;
             align-items: center;
             justify-content: center;
             width: 90%;
             height: 90%;
-            background-color: rgb(216, 216, 216) ;
+            background-color: rgb(216, 216, 216);
+            box-shadow: 2px 2px 7px #d3d3d3;
         }
         &__egal{
             border-radius: 15px;
@@ -52,7 +56,8 @@
             justify-content: center;
             width: 90%;
             height: 90%;
-            background-color: rgb(48, 134, 204) ;
+            background-color: rgb(48, 134, 204);
+            box-shadow: 2px 2px 7px #d3d3d3;
         }
     }
 } 

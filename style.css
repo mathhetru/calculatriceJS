@@ -17,7 +17,6 @@
 }
 
 .blocs {
-  background-color: #f3f3f3;
   height: 500px;
   width: 500px;
   display: flex;
@@ -26,6 +25,7 @@
   flex-wrap: wrap;
 }
 .blocs__touch {
+  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,9 +42,11 @@
   width: 90%;
   height: 90%;
   background-color: #949494;
+  box-shadow: 2px 2px 7px #d3d3d3;
 }
 .blocs__touch__nbr {
   border-radius: 15px;
+  color: black;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
@@ -52,6 +54,7 @@
   width: 90%;
   height: 90%;
   background-color: #d8d8d8;
+  box-shadow: 2px 2px 7px #d3d3d3;
 }
 .blocs__touch__egal {
   border-radius: 15px;
@@ -64,6 +67,7 @@
   width: 90%;
   height: 90%;
   background-color: #3086cc;
+  box-shadow: 2px 2px 7px #d3d3d3;
 }
 
 body {
