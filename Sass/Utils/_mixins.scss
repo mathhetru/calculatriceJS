@@ -1,0 +1,10 @@
+@mixin touche{
+    border-radius: 15px;
+    font-size: $size-font;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    box-shadow: 2px 2px 7px #d3d3d3;
+}

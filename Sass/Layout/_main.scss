@@ -1,19 +1,22 @@
 .results{
-    position: absolute;
+    display: block;
+    border: solid rgb(48, 134, 204) 1px;
+    width: 490px;
+    height: 150px;
+    border-radius: 15px;
+    margin-bottom: 10px;
 }
-.calculette{
+/* .calculette{
     height: 95vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
+    justify-content: center; 
+} */
 .blocs{
-
     height: 500px;
     width: 500px;
     display: flex;
     justify-content: space-around;
-    margin: auto;
     flex-wrap: wrap;
     &__touch{
         text-decoration: none;
@@ -23,41 +26,26 @@
         height: 20%;
         width: 25%;
         &__sign{
-            border-radius: 15px;
+            @include touche;
             color: white;
-            font-size: $size-font;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 90%;
-            height: 90%;
             background-color: rgb(148, 148, 148);
-            box-shadow: 2px 2px 7px #d3d3d3;
         }
         &__nbr{
-            border-radius: 15px;
+            @include touche;
             color: black;
-            font-size: $size-font;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 90%;
-            height: 90%;
             background-color: rgb(216, 216, 216);
-            box-shadow: 2px 2px 7px #d3d3d3;
         }
         &__egal{
-            border-radius: 15px;
-            font-weight: bold;
+            @include touche;
             color: white;
-            font-size: $size-font;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 90%;
-            height: 90%;
-            background-color: rgb(48, 134, 204);
-            box-shadow: 2px 2px 7px #d3d3d3;
+            font-weight: bold;
+            background-color: rgb(48, 134, 204);            
         }
     }
-} 
+}
+.signature{
+    margin-top: 10px;
+    color:rgb(48, 134, 204);
+    font-size: 1rem;
+    font-weight: bold;
+}

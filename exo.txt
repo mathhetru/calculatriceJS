@@ -1,7 +1,0 @@
-/// CALCULETTE /// 
-
-1 - faire le html (avec touches 1 2 3 etc)
-2 - faire le sass qui donnera le css (pour mettre en forme vite fait)
-3 - faire le js (avec des evenements (à ajouter sur la fiche js en passant...))
-
-

@@ -1,15 +1,21 @@
 @import "./Base/font";
 @import "./Utils/variables";
+@import "./Utils/mixins";
 @import "./Layout/main";
+
 
 // Eléments principaux de la page
 
-body{
-    font-family: $font-principale;
-    width: 100%;
-    margin: auto;
-}
 *{
     box-sizing: border-box;
 }
+body{
+    height: 100vh;
+    font-family: $font-principale;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 

@@ -1,85 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link rel="stylesheet" href="style.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculatrice</title>
-</head>
-<body>
-    <header>
-        <span class="results"> </span>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculatrice</title>
+    </head>
+    <body>
+        <header>
+            <span class="results"> </span>
+        </header>
 
-    <section class="calculette">
-        <div class="blocs">
-            <a href="#" class="blocs__touch">
-                <div class="blocs__touch__sign">(</div>
-            </a>
-            <a href="#" class="blocs__touch">
-                <div class="blocs__touch__sign">)</div>
-            </a>
-            <a href="#" class="blocs__touch">
-                <div class="blocs__touch__sign">%</div>
-            </a>
-            <a href="#" class="blocs__touch">
-                <div class="blocs__touch__sign">CE</div>
-            </a>
-            <a href="#" class="blocs__touch">
-                <div class="blocs__touch__nbr">7</div>
-            </a>
-            <a href="#" class="blocs__touch">
-                <div class="blocs__touch__nbr">8</div>
-            </a>
-            <a href="#" class="blocs__touch">
-                <div class="blocs__touch__nbr">9</div>
-            </a>
-            <a href="#" class="blocs__touch">
-                <div class="blocs__touch__sign">/</div>
-            </a>
-            <a href="#" class="blocs__touch">
-                <div class="blocs__touch__nbr">4</div>
-            </a>
-            <a href="#" class="blocs__touch">
-                <div class="blocs__touch__nbr">5</div>
-            </a>
-            <a href="#" class="blocs__touch">
-                <div class="blocs__touch__nbr">6</div>
-            </a>
-            <a href="#" class="blocs__touch">
-                <div class="blocs__touch__sign">x</div>
-            </a>
-            <a href="#" class="blocs__touch">
-                <div class="blocs__touch__nbr">1</div>
-            </a>
-            <a href="#" class="blocs__touch">
-                <div class="blocs__touch__nbr">2</div>
-            </a>
-            <a href="#" class="blocs__touch">
-                <div class="blocs__touch__nbr">3</div>
-            </a>
-            <a href="#" class="blocs__touch">
-                <div class="blocs__touch__sign">-</div>
-            </a>
-            <a href="#" class="blocs__touch">
-                <div class="blocs__touch__nbr">0</div>
-            </a>
-            <a href="#" class="blocs__touch">
-                <div class="blocs__touch__nbr">.</div>
-            </a>
-            <a href="#" class="blocs__touch">
-                <div class="blocs__touch__egal">=</div>
-            </a>
-            <a href="#" class="blocs__touch">
-                <div class="blocs__touch__sign">+</div>
-            </a>
-        </div>
-    </section>
+        <section class="calculette">
+            <div class="blocs">
+                <a href="#" class="blocs__touch"><div class="blocs__touch__sign" class="para-ouvrante">(</div></a>
+                <a href="#" class="blocs__touch"><div class="blocs__touch__sign" class="para-ferme">)</div></a>
+                <a href="#" class="blocs__touch"><div class="blocs__touch__sign" class="pourcentage">%</div></a>
+                <a href="#" class="blocs__touch"><div class="blocs__touch__sign" class="CE">CE</div></a>
+                <a href="#" class="blocs__touch"><div class="blocs__touch__nbr" class="sept">7</div></a>
+                <a href="#" class="blocs__touch"><div class="blocs__touch__nbr" class="huit">8</div></a>
+                <a href="#" class="blocs__touch"><div class="blocs__touch__nbr" class="neuf">9</div></a>
+                <a href="#" class="blocs__touch"><div class="blocs__touch__sign" class="division">/</div></a>
+                <a href="#" class="blocs__touch"><div class="blocs__touch__nbr" class="quatre">4</div></a>
+                <a href="#" class="blocs__touch"><div class="blocs__touch__nbr" class="cinq">5</div></a>
+                <a href="#" class="blocs__touch"><div class="blocs__touch__nbr" class="six">6</div></a>
+                <a href="#" class="blocs__touch"><div class="blocs__touch__sign" class="multiplie">x</div></a>
+                <a href="#" class="blocs__touch"><div class="blocs__touch__nbr" class="un">1</div></a>
+                <a href="#" class="blocs__touch"><div class="blocs__touch__nbr" class="deux">2</div></a>
+                <a href="#" class="blocs__touch"><div class="blocs__touch__nbr" class="trois">3</div></a>
+                <a href="#" class="blocs__touch"><div class="blocs__touch__sign" class="moins">-</div></a>
+                <a href="#" class="blocs__touch"><div class="blocs__touch__nbr" class="zero">0</div></a>
+                <a href="#" class="blocs__touch"><div class="blocs__touch__nbr" class="point">.</div></a>
+                <a href="#" class="blocs__touch"><div class="blocs__touch__egal" class="egal">=</div></a>
+                <a href="#" class="blocs__touch"><div class="blocs__touch__sign" class="plus">+</div></a>
+            </div>
+        </section>
 
-    <footer>
-        Exercice JS - Math
-    </footer>
-</body>
+        <footer class="signature">Exercice JS - Math</footer>
+
+        <script src="JS-calculette.js"></script>
+    </body>
 </html>
