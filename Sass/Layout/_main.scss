@@ -5,6 +5,12 @@
     height: 150px;
     border-radius: 15px;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+    font-family: $font-principale;
+    font-size: 2rem;
 }
 /* .calculette{
     height: 95vh;
