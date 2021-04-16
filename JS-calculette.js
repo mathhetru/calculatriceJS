@@ -22,6 +22,29 @@ const touchEgal = document.querySelector(".egal");
 const touchPlus = document.querySelector(".plus");
 
 
+// evenements click
+touchParaOuvrante.addEventListener('click', paraOuvrante);
+touchParaFerme.addEventListener('click', paraFerme);
+touchPourcentage.addEventListener('click', pourcentage);
+
+function paraOuvrante() {
+        ecranResults.innerHTML = "("
+};
+function paraFerme() {
+    ecranResults.innerHTML = ")"
+};
+function pourcentage() {
+    ecranResults.innerHTML = "%"
+};
 
 
 
+// Evenements click
+
+/* 
+function showResults(message) {
+	ecranResults.innerHTML = (message);
+	};
+touchParaOuvrante.addEventListener('click', showResults("("));
+touchParaFerme.addEventListener('click', showResults(")"));
+*/
