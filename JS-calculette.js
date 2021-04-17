@@ -1,9 +1,11 @@
+// faire keydown
+
 // DOM Elements - touches calculette
 const ecranResults = document.querySelector(".results");
 const touchParaOuvrante = document.querySelector(".para-ouvrante");
 const touchParaFerme = document.querySelector(".para-ferme");
 const touchPourcentage = document.querySelector(".pourcentage");
-const touchCe = document.querySelector(".CE");
+const touchCe = document.querySelector(".C");
 const touchSept = document.querySelector(".sept");
 const touchHuit = document.querySelector(".huit");
 const touchNeuf = document.querySelector(".neuf");
