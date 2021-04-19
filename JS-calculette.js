@@ -1,11 +1,11 @@
-// faire keydown
+// faire keydown avec element.dataset.key
 
 // DOM Elements - touches calculette
 const ecranResults = document.querySelector(".results");
 const touchParaOuvrante = document.querySelector(".para-ouvrante");
 const touchParaFerme = document.querySelector(".para-ferme");
 const touchPourcentage = document.querySelector(".pourcentage");
-const touchCe = document.querySelector(".C");
+const touchC = document.querySelector(".C");
 const touchSept = document.querySelector(".sept");
 const touchHuit = document.querySelector(".huit");
 const touchNeuf = document.querySelector(".neuf");
@@ -26,70 +26,97 @@ const touchPlus = document.querySelector(".plus");
 
 // evenements click
 touchParaOuvrante.addEventListener('click', function paraOuvrante() {
-    ecranResults.innerHTML = "("
+    if (ecranResults.textContent.includes("(")) {
+        return false
+    } else {
+    ecranResults.innerHTML += "(" }
 });
 touchParaFerme.addEventListener('click', function paraFerme() {
-    ecranResults.innerHTML = ")"
-});
-touchPourcentage.addEventListener('click', function pourcentage() {
-    ecranResults.innerHTML = "%"
+    if (ecranResults.textContent.includes(")")) {
+        return false
+    } else {
+    ecranResults.innerHTML += ")" }
 });
 touchSept.addEventListener('click', function sept() {
-    ecranResults.innerHTML = "7"
+    ecranResults.innerHTML += "7"
 });
 touchHuit.addEventListener('click', function huit() {
-    ecranResults.innerHTML = "8"
+    ecranResults.innerHTML += "8"
 });
 touchNeuf.addEventListener('click', function neuf() {
-    ecranResults.innerHTML = "9"
-});
-touchDivision.addEventListener('click', function division() {
-    ecranResults.innerHTML = "/"
+    ecranResults.innerHTML += "9"
 });
 touchQuatre.addEventListener('click', function quatre() {
-    ecranResults.innerHTML = "4"
+    ecranResults.innerHTML += "4"
 });
 touchCinq.addEventListener('click', function cinq() {
-    ecranResults.innerHTML = "5"
+    ecranResults.innerHTML += "5"
 });
 touchSix.addEventListener('click', function six() {
-    ecranResults.innerHTML = "6"
-});
-touchMultiplie.addEventListener('click', function multiplie() {
-    ecranResults.innerHTML = "x"
+    ecranResults.innerHTML += "6"
 });
 touchUn.addEventListener('click', function un() {
-    ecranResults.innerHTML = "1"
+    ecranResults.innerHTML += "1"
 });
 touchDeux.addEventListener('click', function deux() {
-    ecranResults.innerHTML = "2"
+    ecranResults.innerHTML += "2"
 });
 touchTrois.addEventListener('click', function trois() {
-    ecranResults.innerHTML = "3"
-});
-touchMoins.addEventListener('click', function moins() {
-    ecranResults.innerHTML = "-"
+    ecranResults.innerHTML += "3"
 });
 touchZero.addEventListener('click', function zero() {
-    ecranResults.innerHTML = "0"
+    ecranResults.innerHTML += "0"
 });
 touchPoint.addEventListener('click', function point() {
-    ecranResults.innerHTML = "."
+    if (ecranResults.textContent.includes(".")) {
+        return false
+    } else {
+    ecranResults.innerHTML += "." }
 });
-touchEgal.addEventListener('click', function egal() {
-    ecranResults.innerHTML = "="
+touchC.addEventListener('click', function supp() {
+    ecranResults.textContent = "";
+});
+touchPourcentage.addEventListener('click', function pourcentage() {
+    if (ecranResults.textContent.includes("%")) {
+        return false
+    } else {
+    ecranResults.innerHTML += "%" }
+});
+touchMoins.addEventListener('click', function moins() {
+    if (ecranResults.textContent.includes("-")) {
+        return false
+    } else {
+    ecranResults.innerHTML += "-" }
+});
+touchDivision.addEventListener('click', function division() {
+    if (ecranResults.textContent.includes("/")) {
+        return false
+    } else {
+    ecranResults.innerHTML += "/" }
+});
+touchMultiplie.addEventListener('click', function multiplie() {
+    if (ecranResults.textContent.includes("*")) {
+        return false
+    } else {
+    ecranResults.innerHTML += "*" }
 });
 touchPlus.addEventListener('click', function plus() {
-    ecranResults.innerHTML = "+"
+    if (ecranResults.textContent.includes("+")) {
+        return false
+    } else {
+    ecranResults.innerHTML += "+" }
+});
+touchEgal.addEventListener('click', function egal() {
+    const calcul = eval(ecranResults.textContent);
+    ecranResults.textContent = calcul;
 });
 
-/*
 
-// Evenements click
 
+/* Evenements click
 function showResults(message) {
 	ecranResults.innerHTML = (message);
 	};
 touchParaOuvrante.addEventListener('click', showResults("("));
 touchParaFerme.addEventListener('click', showResults(")"));
-*/
+*/ 
