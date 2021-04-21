@@ -55,3 +55,14 @@
     font-size: 1rem;
     font-weight: bold;
 }
+
+@media screen and (max-width: 510px) {
+    .results{
+        width: 310px;
+        height: 100px;
+    }
+    .blocs{
+        width: 310px;
+        height: 310px;
+    }
+}
