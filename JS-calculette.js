@@ -54,7 +54,7 @@ touchCinq.addEventListener('click', function cinq() {
 });
 touchSix.addEventListener('click', function six() {
     ecranResults.innerHTML += "6"
-});
+});S
 touchUn.addEventListener('click', function un() {
     ecranResults.innerHTML += "1"
 });
@@ -110,13 +110,3 @@ touchEgal.addEventListener('click', function egal() {
     const calcul = eval(ecranResults.textContent);
     ecranResults.textContent = calcul;
 });
-
-
-
-/* Evenements click
-function showResults(message) {
-	ecranResults.innerHTML = (message);
-	};
-touchParaOuvrante.addEventListener('click', showResults("("));
-touchParaFerme.addEventListener('click', showResults(")"));
-*/ 
