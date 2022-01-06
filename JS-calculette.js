@@ -54,7 +54,7 @@ touchCinq.addEventListener('click', function cinq() {
 });
 touchSix.addEventListener('click', function six() {
     ecranResults.innerHTML += "6"
-});S
+});
 touchUn.addEventListener('click', function un() {
     ecranResults.innerHTML += "1"
 });
